@@ -13,11 +13,14 @@ Vue.use(IconsPlugin);
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-vue/dist/bootstrap-vue.css";
 
-Vue.use(VueAxios,axios);
+//Vue.prototype.$Apiurl = "http://51.210.97.80/";
+Vue.prototype.$Apiurl = "http://localhost:3000/article/";
+
+Vue.use(VueAxios, axios);
 
 Vue.config.productionTip = false
 
 new Vue({
-  router,
-  render: h => h(App)
+    router,
+    render: h => h(App)
 }).$mount('#app')

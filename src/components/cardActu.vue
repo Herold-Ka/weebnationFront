@@ -1,6 +1,6 @@
 <template>
   <div class="cardContainer">
-    <b-container v-for="card in card" :key="card.id">
+    <b-container v-for="card in card" :key="card.id" >
       <b-card
     :title="`${card.titre}`"
     :img-src="`${card.image}`"
@@ -9,8 +9,7 @@
     img-height="250"
     tag="article"
     style="max-width: 20rem;"
-    class="mb-2 card"
-    
+    class="mb-2 card"  
   >
     <b-card-text>
       {{card.description}}
@@ -27,16 +26,14 @@
 export default {
     data(){
         return{
-           //image: lien[1].Image, description: "image1", alt: "altImg"      
-          card:{
-
-          }
-,//{{card.description}}
+           //image: lien[1].Image, description: "image1", alt: "altImg"        
+              card:{},
+//{{card.description}}
         }
     },
     components:{},
     created:function(){
-      this.axios.get('http://localhost:3000/article/affichageArticle/4/game' )
+      this.axios.get('http://localhost:3000/article/nbArticlePageArticle/20' )
       .then((res)=>{
         this.card = res.data.articles;
         //console.log(this.cards.length);
@@ -49,9 +46,11 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .cardContainer{
       display: flex;
       top: 0vh;
+      display: flex;
+      margin: auto;
     }
 </style>

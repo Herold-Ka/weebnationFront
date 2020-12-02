@@ -90,4 +90,7 @@ export default {
   margin-top: auto;
   margin-bottom: auto;
 }
+.Connecter, .nonConnecter{
+  width: 100%;
+}
 </style>

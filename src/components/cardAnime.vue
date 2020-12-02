@@ -6,6 +6,7 @@
     :img-src="`${card.image}`"
     :img-alt="`${card.alt}`"
     img-top
+    img-height="250"
     tag="article"
     style="max-width: 20rem;"
     class="mb-2 card"
@@ -35,7 +36,8 @@ export default {
     },
     components:{},
     created:function(){
-      this.axios.get('http://localhost:3000/article/nbArticlePPageReverse/3/anime' )
+      //this.axios.get(this.apiurl + 'affichageArticle/3/anime' )
+      this.axios.get('http://localhost:3000/article/affichageArticle/4/anime' )
       .then((res)=>{
         this.card = res.data.articles;
         //console.log(this.cards.length);

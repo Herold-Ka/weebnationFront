@@ -2,9 +2,9 @@
   <div class="secondNav">
       <div class="navM_A_J">
           <ul>
-              <li class="navManga" ><button v-on:click="show(0)">Manga</button></li>
-              <li class="navAnimation" ><button v-on:click="show(1)">Animé</button></li>
-              <li class="navJeuxvideo" ><button v-on:click="show(2)">Jeux video</button></li>  
+              <li class="navManga" v-on:click="show(0)">Manga</li>
+              <li class="navAnimation" v-on:click="show(1)">Animé</li>
+              <li class="navJeuxvideo" v-on:click="show(2)">Jeux vidéo</li>  
           </ul>
       </div>
       <div class="divCardManga" v-show="divManga">
@@ -63,11 +63,8 @@ export default {
 
 <style>
 .navM_A_J{
-    height: 3rem;
     width: 55%;
     margin: auto;
-    background-color: #007bff;
-    border-radius: 30px 30px;
     top: 7rem;
 }
 .navM_A_J ul{
@@ -76,12 +73,20 @@ export default {
     list-style:none;
     margin: auto;
     padding-left:0;
-}
-.navM_A_J button{
+    border-radius: 30px 30px;
     background-color: #007bff;
-    border: none;
+    height: 2.5rem;
+}
+.navM_A_J li{
+    margin: auto;
     text-align: center;
     color: white;
+}
+.navM_A_J a{
+    background-color: #007bff;
+    border: none;
+    
+    margin: auto;
 }
 .navAnimation{ 
   border-color: white;

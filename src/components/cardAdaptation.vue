@@ -6,10 +6,10 @@
     :img-src="`${card.image}`"
     :img-alt="`${card.alt}`"
     img-top
+    img-height="250"
     tag="article"
     style="max-width: 20rem;"
-    class="mb-2 card"
-    
+    class="mb-2 card"   
   >
     <b-card-text>
       {{card.description}}
@@ -35,7 +35,7 @@ export default {
     },
     components:{},
     created:function(){
-      this.axios.get('http://localhost:3000/article/nbArticlePPageReverse/3/drama' )
+      this.axios.get('http://localhost:3000/article/affichageArticle/4/adaptation' )
       .then((res)=>{
         this.card = res.data.articles;
         //console.log(this.cards.length);
@@ -52,5 +52,6 @@ export default {
     .cardContainer{
       display: flex;
       top: 0vh;
+      overflow-x:hidden;
     }
 </style>
