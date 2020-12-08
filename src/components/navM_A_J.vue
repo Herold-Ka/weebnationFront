@@ -110,4 +110,7 @@ export default {
     top:5rem;
     left:2rem;
 }
+.navManga, .navAnimation, .navJeuxvideo{
+    cursor: pointer;
+}
 </style>

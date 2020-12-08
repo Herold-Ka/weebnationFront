@@ -9,9 +9,9 @@
     img-height="80"
     class="carousel"
     fixed
+    background-image="cover"
   >
     <b-carousel-slide class="slide" v-for="slide in slides" :key="slide"
-      caption="First slide"
       :img-src=slide
     ></b-carousel-slide>
   
@@ -26,7 +26,7 @@ export default {
       slides: [
         "../img/drama_pic2.jpg",
         "../img/Weeb2.png",
-        "../img/test.png",
+        "../img/One-piece.jpg",
       ]
     }
   }

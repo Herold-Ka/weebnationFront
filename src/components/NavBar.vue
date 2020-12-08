@@ -5,16 +5,16 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav >
         <b-navbar-brand href="#"><img src="../../public/img/Weeb2.png" alt="" class="image" ></b-navbar-brand>
-        <b-nav-item href="#">home</b-nav-item>
-        <b-nav-item href="#">fan-art</b-nav-item>
-        <b-nav-item href="#">actualité</b-nav-item>
-        <b-nav-item href="#">évènement</b-nav-item>
+        <b-nav-item href="#">Accueil</b-nav-item>
+        <b-nav-item href="#">Fan-art</b-nav-item>
+        <b-nav-item href="#">Actualité</b-nav-item>
+        <b-nav-item href="#">Evènement</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Recherche"></b-form-input>
           <b-button size="sm" class="my-2 my-sm-0" type="submit">recherche</b-button>
         </b-nav-form>
 
@@ -35,7 +35,7 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav >
         <b-navbar-brand href="#"><img src="../../public/img/Weeb2.png" alt="" class="image" ></b-navbar-brand>
-        <b-nav-item href="#">home</b-nav-item>
+        <b-nav-item href="#">Accueil</b-nav-item>
         <b-nav-item href="#">fan-art</b-nav-item>
         <b-nav-item href="#">actualité</b-nav-item>
         <b-nav-item href="#">évènement</b-nav-item>
@@ -44,8 +44,8 @@
       <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Search"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">recherche</b-button>
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Recherche"></b-form-input>
+          <b-button size="sm" class="my-2 my-sm-0" type="submit">Recherche</b-button>
         </b-nav-form>
 
         <b-nav-item-dropdown right>

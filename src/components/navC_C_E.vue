@@ -104,4 +104,7 @@ export default {
     top:13rem;
     left:2rem;
 }
+.navComics, .navAdaptation, .navEvenement{
+    cursor: pointer;
+}
 </style>

@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 //const lien = this.$route.params.article.image; 
 export default {
     data(){
