@@ -1,11 +1,11 @@
 <template>
   <div>
-      <Actucard :actucards="actucards"/>
+      <Actucard :actucards="actucards" class="actuViews"/>
   </div>
 </template>
 
 <script>
-import Actucard from "../components/Actucard";
+import Actucard from "../components/nav/navActu";
 export default {
     data(){
         return{
@@ -17,6 +17,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+    .actuViews{
+        position: relative;
+        top: 6rem;
+    }
 </style>

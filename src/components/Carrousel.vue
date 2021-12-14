@@ -24,9 +24,8 @@ export default {
   data(){
     return{
       slides: [
-        "../img/drama_pic2.jpg",
-        "../img/Weeb2.png",
-        "../img/One-piece.jpg",
+        "../img/slider1.jpg",
+        "../img/slider2.jpg",
       ]
     }
   }
